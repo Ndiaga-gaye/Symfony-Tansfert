@@ -58,7 +58,7 @@ $data = [
 return new JsonResponse($data, 500);
 }
   /**
-  * @Route("/useradmin", name="app_register")
+  * @Route("/user", name="app_user", methods={"POST"})
   */
     public function ajoutuser(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
@@ -110,7 +110,7 @@ return new JsonResponse($data, 500);
 
 
   /**
-  * @Route("/creationCompte", name="app_register")
+  * @Route("/creationCompte", name="app_creationCompte")
   */
 
   public function CrerCompte(Request $request, UserPasswordEncoderInterface $passwordEncoder)
